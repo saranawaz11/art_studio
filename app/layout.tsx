@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./(main)/_components/Navbar";
 import "./globals.css";
 import TransitionProvider from "./providers/TransitionProvider";
 import { Genos } from "next/font/google";
@@ -14,9 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={genos.className}>
-
         <TransitionProvider>
-          <Navbar />
           {children}
         </TransitionProvider>
       </body>

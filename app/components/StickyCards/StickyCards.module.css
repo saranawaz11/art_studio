@@ -1,0 +1,8 @@
+.sticky-cards{
+    @apply relative w-full h-full;
+    /* background-color: ; */
+}
+
+.sticky-card{
+    @apply relative w-full h-svh bg-pink-200 text-purple-800 p-6 flex gap-12 will-change-transform;
+}
