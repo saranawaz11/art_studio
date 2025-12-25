@@ -138,7 +138,7 @@ nav .link {
   object-fit: cover; 
   vertical-align: middle; 
 }
- 
+
 .sticky-card-text{ 
   flex: 2; 
   display: flex; 
@@ -153,4 +153,63 @@ nav .link {
 .image {
   display: flex;
   align-items: center;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* cards */
+.cards .container{
+  width: 600px;
+  height: 600px;
+  position: relative;
+  perspective: 500px;
+  gap:10px;
+}
+
+.cards img{
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.cards .card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition: 0.4s ease;
+}
+.cards .card1{
+  z-index: 3;
+}
+.cards .card2{
+  transform: translate(-50%, -70%) scale(0.9);
+  z-index: 2;
+}
+.cards .card3{
+  transform: translate(-50%, -90%) scale(0.7);
+  z-index: 1;
+}
+
+.cards .container:hover .card1{
+  transform: translate(-80%, -50%) scale(1) rotateY(-40deg);
+}
+.cards .container:hover .card2{
+  transform: translate(-60%, -50%) scale(0.9) rotateY(-40deg);
+}
+.cards .container:hover .card3{
+  transform: translate(-40%, -50%) scale(0.7) rotateY(-40deg);
+}
+
+.cards .container:hover{
+  transform: scale(2);
+}
+
+.card:hover{
+  margin-top: -50px;
 }

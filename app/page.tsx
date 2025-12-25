@@ -2,6 +2,7 @@ import Link from "next/link";
 import { allPaintings } from "./(main)/_components/constants";
 import About from "./(main)/about/page";
 import StickyCards from "./components/StickyCards/StickyCards";
+import Cards from "./components/StickyCards/Cards";
 
 
 export default function Home() {
@@ -12,7 +13,8 @@ export default function Home() {
           Paintings
         </a>
       </div>
-      <About />
+      {/* <About /> */}
+      <Cards />
       <StickyCards />
       <About />
     </div>
