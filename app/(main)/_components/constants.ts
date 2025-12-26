@@ -67,4 +67,105 @@ export const stickyCardsData = [
         descrption: 'Painted while van Gogh was in the asylum, this work is a brilliant example of the emotional power of color and form. The irises are rendered in deeply saturated tones that convey the turbulence and vitality of the artist’s inner world.'
     },
 
+];
+
+export const displayImages = [
+    {
+        id: 'p1',
+        img_src: 'https://media.timeout.com/images/103166739/1372/772/image.webp',
+        name: ''
+    },
+    {
+        id: 'p2',
+        img_src: 'https://media.timeout.com/images/103166743/1372/772/image.webp',
+    },
+    {
+        id: 'p3',
+        img_src: 'https://media.timeout.com/images/103166737/1372/772/image.webp',
+    },
+    {
+        id: 'p4',
+        img_src: 'https://media.timeout.com/images/103166741/1372/772/image.webp',
+    },
+    {
+        id: 'p5',
+        img_src: 'https://media.timeout.com/images/103166745/1372/772/image.webp',
+    },
+    {
+        id: 'p6',
+        img_src: 'https://media.timeout.com/images/103166747/1372/772/image.webp',
+    },
+    {
+        id: 'p7',
+        img_src: 'https://media.timeout.com/images/105293264/1372/772/image.webp',
+    }
+// },
+// {
+//     id: 8,
+//     img_src: 'https://media.timeout.com/images/103166750/1372/772/image.webp',
+// },
+// {
+//     id: 9,
+//     img_src: 'https://media.timeout.com/images/105222673/1372/772/image.webp',
+// },
+// {
+//     id: 10,
+//     img_src: 'https://media.timeout.com/images/105222677/1372/772/image.webp',
+// },
+// {
+//     id: 11,
+//     img_src: 'https://media.timeout.com/images/105223155/1372/772/image.webp',
+// },
+// {
+//     id: 'p12',
+//     img_src: 'https://media.timeout.com/images/105222683/1372/772/image.webp',
+// },
 ]
+
+const performanceImages = [
+    { id: "p1", src: "/performance1.png" },
+    { id: "p2", src: "/performance2.png" },
+    { id: "p3", src: "/performance3.png" },
+    { id: "p4", src: "/performance4.png" },
+    { id: "p5", src: "/performance5.jpg" },
+    { id: "p6", src: "/performance6.png" },
+    { id: "p7", src: "/performance7.png" },
+];
+
+export const performanceImgPositions = [
+    {
+        id: "p1",
+        left: 5,
+        bottom: 65,
+    },
+    {
+        id: "p2",
+        right: 10,
+        bottom: 60,
+    },
+    {
+        id: "p3",
+        right: -5,
+        bottom: 45,
+    },
+    {
+        id: "p4",
+        right: -10,
+        bottom: 0,
+    },
+    {
+        id: "p5",
+        left: 20,
+        bottom: 50,
+    },
+    {
+        id: "p6",
+        left: 2,
+        bottom: 30,
+    },
+    {
+        id: "p7",
+        left: -5,
+        bottom: 0,
+    },
+];

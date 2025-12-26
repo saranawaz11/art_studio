@@ -3,6 +3,8 @@ import { allPaintings } from "./(main)/_components/constants";
 import About from "./(main)/about/page";
 import StickyCards from "./components/StickyCards/StickyCards";
 import Cards from "./components/StickyCards/Cards";
+import Display from "./components/Display";
+import ScrollAnimation from "./components/ScrollAnimations";
 
 
 export default function Home() {
@@ -13,10 +15,11 @@ export default function Home() {
           Paintings
         </a>
       </div>
-      {/* <About /> */}
-      <Cards />
       <StickyCards />
-      <About />
+      <Display />
+      <ScrollAnimation />
+      <Cards />
+
     </div>
   );
 }
