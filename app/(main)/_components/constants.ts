@@ -169,3 +169,48 @@ export const performanceImgPositions = [
         bottom: 0,
     },
 ];
+
+export const IMAGES_CONFIG = {
+    top: [
+        {
+            // src: 'https://i.pinimg.com/1200x/28/58/57/285857cb7601ea13763f86ddf3493aeb.jpg',
+            src: 'https://media.timeout.com/images/105222677/1372/772/image.webp',
+            type: 'side',
+            position: 'left-1/2'
+        },
+        {
+            src: 'https://i.pinimg.com/736x/93/96/5f/93965f55b81049b4e86f8dc4f31d32a3.jpg',
+            type: 'side',
+            position: 'right-1/2'
+        },
+    ],
+    center: [
+        {
+            src: 'https://i.pinimg.com/1200x/36/19/09/36190987c6cd3c29ec4f1ac202decbf1.jpg',
+            type: 'side',
+            position: 'right-full'
+        },
+        {
+            src: 'https://i.pinimg.com/1200x/ae/b5/4a/aeb54af1705b726ab3483e1a03804c5a.jpg',
+            type: 'main',
+            position: ''
+        },
+        {
+            src: 'https://i.pinimg.com/736x/01/59/d7/0159d74c5a85c59dba82afca1ee38f62.jpg',
+            type: 'side',
+            position: 'left-full'
+        },
+    ],
+    bottom: [
+        {
+            src: 'https://i.pinimg.com/736x/10/44/b9/1044b93a1424c2064828e96931d4733f.jpg',
+            type: 'side',
+            position: '-left-1/2'
+        },
+        {
+            src: 'https://i.pinimg.com/1200x/74/42/65/74426567058e753471e176d45f529494.jpg',
+            type: 'side',
+            position: '-right-1/2'
+        },
+    ],
+}

@@ -1,5 +1,6 @@
 import Navbar from "./(main)/_components/Navbar";
 import "./globals.css";
+import LenisProvider from "./providers/LenisProvider";
 import TransitionProvider from "./providers/TransitionProvider";
 import { Genos } from "next/font/google";
 const genos = Genos({
@@ -15,7 +16,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={genos.className}>
         <TransitionProvider>
+          <LenisProvider>
           {children}
+          </LenisProvider>
         </TransitionProvider>
       </body>
     </html>
