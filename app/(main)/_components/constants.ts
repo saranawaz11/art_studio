@@ -173,15 +173,14 @@ export const performanceImgPositions = [
 export const IMAGES_CONFIG = {
     top: [
         {
-            // src: 'https://i.pinimg.com/1200x/28/58/57/285857cb7601ea13763f86ddf3493aeb.jpg',
-            src: 'https://media.timeout.com/images/105222677/1372/772/image.webp',
+            src: 'https://i.pinimg.com/1200x/28/58/57/285857cb7601ea13763f86ddf3493aeb.jpg',
             type: 'side',
-            position: 'left-1/2'
+            position: '-left-1/2'
         },
         {
             src: 'https://i.pinimg.com/736x/93/96/5f/93965f55b81049b4e86f8dc4f31d32a3.jpg',
             type: 'side',
-            position: 'right-1/2'
+            position: '-right-1/2'
         },
     ],
     center: [

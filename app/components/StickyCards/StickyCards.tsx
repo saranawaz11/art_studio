@@ -34,7 +34,6 @@ const StickyCards = () => {
                         const scale = 1 - progress * 0.15;
                         const rotation = (index % 2 === 0 ? 5 : -5) * progress;
                         const afterOpacity = progress;
-
                         gsap.set(card, {
                             scale: scale,
                             rotation: rotation,
@@ -60,8 +59,20 @@ const StickyCards = () => {
 
                     <div className="sticky-card-content">
                         <div className="image">
-                            <img src={cardData.img_src} alt="image" />
-                        </div>
+
+                            <Image
+                                src={cardData.img_src}
+                                alt="image"
+                                width={400}
+                                height={400}
+                                style={{
+                                    width: '100%',
+                                    maxWidth: '400px',
+                                    height: 'auto',
+                                    objectFit: 'cover',
+                                    verticalAlign: 'middle'
+                                }}
+                            />                        </div>
                         <div className="sticky-card-text">
                             <h3 className="text-5xl pb-4">{cardData.name}</h3>
                             <p>{cardData.descrption}</p>

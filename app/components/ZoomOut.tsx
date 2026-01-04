@@ -20,7 +20,7 @@ const ZoomOutScroll = () => {
         // )
         const tl = gsap.timeline({
             scrollTrigger: {
-                trigger: stickyContentContainer.current,
+                // trigger: stickyContentContainer.current,
                 start: 'top top',
                 end: 'bottom bottom',
                 scrub: 0.5
@@ -30,11 +30,13 @@ const ZoomOutScroll = () => {
             scale: 0.51,
             duration: 10
         });
+
         tl.to('[data-zoom-type="side"], [data-zoom-type="main"]',{
             clipPath: 'inset(10px round 10px)',
             ease: 'power4.out',
             duration: 10
         }, 0);
+
         tl.to('[data-scale], [data-text-center]', {
             y: '-25vh',
             ease: 'power2.in',
@@ -43,27 +45,26 @@ const ZoomOutScroll = () => {
     })
 
     return (
-        <section ref={stickyContentContainer} className="relative h-[400vh] pt-5">
+        <section ref={stickyContentContainer} className="relative h-[400vh] pt-5 bg-pink-300">
 
             <div className="sticky top-0 h-full overflow-hidden">
 
                 <div data-scale className="relative h-screen w-screen will-change-transform">
 
-                    <div data-section='top' className="absolute bottom-full h-screen w-screen">
+                    <div data-section='top' className="absolute bottom-full h-screen w-screen bg-green-200 flex gap-2">
 
                         {IMAGES_CONFIG.top.map((img, index) => (
                             <div key={`top-${index}`} className={`relative aspect-video h-screen w-screen ${img.position}`}>
                                 <Image data-zoom-type={img.type}
                                 src={img.src}
                                 fill
-                                alt="Image"
-                                sizes="(max-width:640px) 1080px, 100vw"
+                                    alt="Image"
                                 className="object-cover"
                                 priority={false}/>
                             </div>
                         ))}
                     </div>
-                    <div data-section='center'>
+                    {/* <div data-section='center'>
                         {IMAGES_CONFIG.center.map((img, index) => (
                             <div key={`center-${index}`} className={`absolute aspect-video h-screen w-screen ${img.position}`}>
                                 <Image data-zoom-type={img.type}
@@ -75,8 +76,8 @@ const ZoomOutScroll = () => {
                                 priority={img.type === 'main'}/>
                             </div>
                         ))}
-                    </div>
-                    <div data-section='bottom' className="absolute top-full h-screen w-screen">
+                    </div> */}
+                    {/* <div data-section='bottom' className="absolute top-full h-screen w-screen">
                         {IMAGES_CONFIG.bottom.map((img, index) => (
                             <div key={`bottom-${index}`} className={`absolute aspect-video h-screen w-screen ${img.position}`}>
                                 <Image data-zoom-type={img.type}
@@ -88,13 +89,13 @@ const ZoomOutScroll = () => {
                                 priority={false}/>
                             </div>
                         ))}
-                    </div>
+                    </div> */}
                 </div>
             </div>
-            <div data-text-center className="absolute top-1/2 left-1/2 w-[45vw] -translate-x-1/2 -translate-y-1/2 will-change-transform max-sm:w-[95vw]">
+            {/* <div data-text-center className="absolute top-1/2 left-1/2 w-[45vw] -translate-x-1/2 -translate-y-1/2 will-change-transform max-sm:w-[95vw]">
                         <p data-text= '1' className="text absolute top-1/2 block w-full -translate-y-1/2 text-center font-medium">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, fuga.</p>
                         <p data-text='2' className="text absolute top-1/2 block w-full -translate-y-1/2 text-center font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsam!</p>
-            </div>
+            </div> */}
         </section>
     );
 }

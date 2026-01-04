@@ -1,0 +1,295 @@
+.wrapper {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+    padding-top: 30px;
+
+
+  }
+
+
+  .wrapper .content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper .content .h1 {
+    width: 100%;
+    overflow: hidden;
+  }
+
+
+  .wrapper .content .h1 h1 {
+    font-size: 130px;
+    line-height: 90%;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .wrapper .content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    line-height: 109%;
+    width: 70%;
+    padding-top: 20px;
+  }
+
+
+  .wrapper .content a {
+    display: inline-block;
+    border: 3px solid #fff;
+    border-radius: 19px;
+    padding: 7px 20px;
+    font-size: 19px;
+    margin: 30px 0px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.6);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+
+  .wrapper .img {
+    height: 50vh;
+    position: relative;
+    margin-left: 35px;
+  }
+
+  .wrapper .img .subimg {
+    width: 89%;
+    height: 360px;
+    background: #fff;
+    position: absolute;
+    margin: 10px;
+    -webkit-box-shadow: 0px 0px 15px #000,
+      0px 0px 15px #000;
+    box-shadow: 0px 0px 15px #000,
+      0px 0px 15px #000;
+    overflow: hidden;
+    top: 80;
+  }
+
+  .img .two{
+    bottom: 120;
+    background-color: pink;
+  }
+
+  .wrapper .img .subimg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+
+  .wrapper .img .subimg.one .bg {
+    width: 100%;
+    height: 100%;
+    background: gray;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+  }
+
+  .wrapper .img .subimg.two {
+    width: 64%;
+    height: 250px;
+    position: absolute;
+    left: -50px;
+    display: inline-block;
+    top: 90;
+  }
+
+  .wrapper .img .subimg.two .bg2 {
+    width: 100%;
+    height: 100%;
+    background:rgb(21, 212, 97);
+    position: absolute;
+    z-index: 9;
+    top: 0;
+  }
+
+  .wrapper .img .subimg.three {
+    width: 40%;
+    height: 170px;
+    position: absolute;
+    right: 130px;
+    bottom: 20;
+  }
+
+  .wrapper .img .subimg.three .bg3 {
+    width: 100%;
+    height: 100%;
+    background:rgb(222, 34, 34);
+    position: absolute;
+    z-index: 9;
+    top: 0;
+  }
+
+
+  .text-content {
+    /* text-align: center; */
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    h1 {
+      font-size: 9rem;
+      line-height: 6rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      font-size: 1rem;
+    }
+
+    a {
+      border: 1px solid rgb(162, 153, 158);
+      font-size: 1.5rem;
+      border-radius: 10px;
+      padding: 8px;
+      display: inline-block;
+    }
+
+    span {
+      color: rgb(132, 106, 106);
+    }
+  }
+
+  .imgs {
+    position: relative;
+    border: 1px solid pink;
+    width: 100%;
+    height: 70vh;
+    margin-left: 35px;
+
+    /* .img{
+      position: absolute;
+      margin: 10px;
+      width: 85%;
+      height: 360px;
+    } */
+
+
+    .img {
+      position: absolute;
+      margin: 10px;
+      width: 85%;
+      height: 360px;
+
+      position: relative;
+      /* critical */
+      overflow: hidden;
+      /* keeps overlay inside image */
+    }
+
+
+    .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+
+    .img .bg {
+      position: absolute;
+      inset: 0;
+      /* shorthand for top/left/right/bottom: 0 */
+
+      background-color: rgba(128, 128, 128, 0.55);
+      /* gray overlay */
+      z-index: 2;
+    }
+
+    .img1 {
+      position: absolute;
+      /* background-color: bisque; */
+      top: 30;
+      left: 50;
+      width: 80%;
+      height: 360px;
+    }
+
+
+    .img2 {
+      height: 250px;
+      width: 64%;
+      position: absolute;
+      background-color: aquamarine;
+      left: -20;
+      bottom: 2;
+    }
+
+    .img3 {
+      height: 220px;
+      width: 50%;
+      background-color: brown;
+      bottom: -10;
+      right: 40;
+    }
+  }
+}
+
+/* .hero-container {
+  color: rgb(198, 199, 196);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .loader {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    color: #272626;
+  }
+
+  .loader h1 {
+    font-size: 250px;
+    font-family: Cosi Azure;
+    position: absolute;
+    top: -50px;
+    left: -500px;
+  }
+
+  .loader h2 {
+    font-size: 250px;
+    font-family: Cosi Azure;
+    position: absolute;
+    bottom: -70px;
+    right: -130px;
+  }
+
+  img {
+    width: 200px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ */
+  /* .loader {
+    position: absolute;
+    font-size: 200px;
+    color: #47815f;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    h1 {
+      top: -50px;
+      position: absolute;
+    }
+
+    h2 {
+      bottom: -70;
+      position: absolute;
+
+    }
+  } */
